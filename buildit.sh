@@ -5,8 +5,9 @@ cat pathfinder-USILS.version
 echo -n "Enter version: "
 read ver
 
-cd ..
-zip -9r $DESTDIR/Pathfinder-USILS-CommunityPatch-${ver}.zip Pathfinder-USILS-CommunityPatch
+cp pathfinder-USILS.version GameData/Pathfinder
+zip -9r $DESTDIR/Pathfinder-USILS-CommunityPatch-${ver}.zip GameData
+rm GameData/Pathfinder/pathfinder-USILS.version
 
 
 
